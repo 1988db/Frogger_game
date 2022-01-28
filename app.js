@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     //move the frog when its on the log moving left
     function moveWithLogLeft() {
-        if (currentIndex >= 27 && currentIndex < 35) {
+        if (currentIndex > 18 && currentIndex <= 26) {
             squares[currentIndex].classList.remove('frog');
             currentIndex -= 1;
             squares[currentIndex].classList.add('frog');
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     //move the frog when its on the log moving left
     function moveWithLogRight() {
-        if (currentIndex > 18 && currentIndex <= 26) {
+        if (currentIndex >= 27 && currentIndex < 35) {
             squares[currentIndex].classList.remove('frog');
             currentIndex += 1;
             squares[currentIndex].classList.add('frog');
